@@ -22,7 +22,7 @@ function emit_log {
     echo "$ms $1" >> $LOG_FILE
 }
 
-function kirapids {
+function kira_pids {
 
     # kill pids if they have been hanging around for too long.
     for pid in `pgrep -f $PROCESS_REGEX`
@@ -38,7 +38,9 @@ function kirapids {
     
     # clear the pid file.
     > $PIDS_FILE
+}
     
+function watch_pids {
     # collect pids of the given program, save them to $PIDSFILE.
     for pid in `pgrep -f $PROCESS_REGEX`
       do
@@ -51,5 +53,8 @@ function kirapids {
       done
 }
 
-# call our kira (killer) function.
-kirapids
+# call our kira_pids (killer) function.
+kira_pids
+
+# call our watch_pids function.
+watch_pids
