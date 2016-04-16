@@ -23,7 +23,6 @@ function emit_log {
 }
 
 function kira_pids {
-
     # kill pids if they have been hanging around for too long.
     for pid in `pgrep -f $PROCESS_REGEX`
       do
