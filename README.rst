@@ -15,13 +15,13 @@ Kira expects two arguments, the `process-regex` and the human readable `program-
 
 .. code-block:: bash
 
-    ./kira.sh <process-regex> <program-name>" >&2
+    ./kira.sh <process-regex> <program-name>
 
 For example:
 
 .. code-block:: bash
 
-    ./kira.sh /usr/bin/uri2png uri2png"
+    ./kira.sh /usr/bin/uri2png uri2png
 
 cron
 ====

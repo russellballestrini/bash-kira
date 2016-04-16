@@ -1,7 +1,7 @@
 #!/bin/bash
 
 if [ -z $2 ]; then
-    echo "Usage: $0 <process-regex> <program-name>" >&2
+    echo "Usage: $0 <process-regex> <program-name>"
     echo "Example: $0 /usr/bin/cutycapt cutycapt"
     exit
 fi
