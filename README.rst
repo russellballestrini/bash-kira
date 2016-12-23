@@ -21,7 +21,7 @@ For example:
 
 .. code-block:: bash
 
-    ./kira.sh /usr/bin/uri2png uri2png
+    ./kira.sh /usr/local/bin/uri2png uri2png
 
 cron
 ====
@@ -30,7 +30,7 @@ This example kills a program if it has been running for 1-2 minutes.
 
 .. code-block:: bash
 
- * * * * * /usr/bin/kira.sh /usr/bin/uri2png uri2png
+ * * * * * /usr/bin/kira.sh /usr/local/bin/uri2png uri2png
 
 Note: Cron does not support sub minute scheduling, but Kira should.
 
