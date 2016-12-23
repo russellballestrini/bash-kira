@@ -2,7 +2,7 @@
 
 if [ -z $2 ]; then
     echo "Usage: $0 <process-regex> <program-name>"
-    echo "Example: $0 /usr/bin/uri2png uri2png"
+    echo "Example: $0 /usr/local/bin/uri2png uri2png"
     exit
 fi
 
